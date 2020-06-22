@@ -39,8 +39,32 @@ We have changed data type of Start and End Time to datetime instead of default t
 
 We have explored the relationship between user type, trips duration, day of the week and usage distribution.
 
+### Usage Distribution
+We discovered a surprisingly bimodal distribution of bike usage by day.
 ![Bike usage distribution](./Resources/usage_distribution.png)
 
-## Key Insights for Presentation
+### Trip duration by day of the week
+We observed a substancial difference on trip duration between weekdays and weekends that suggested to look into this among other features.
+![Trip duration by day of the week](trip_duration_by_weekday.png)
 
-> Select one or two main threads from your exploration to polish up for your presentation. Note any changes in design from your exploration step here.
+### Trips distribution by day of the week
+According to previous findings we discovered a very differente shape on bike usage depending on the day of the week. We find a bimodal distribution on weekdays while a normal shape show up during weekends.
+![Bike usage by day of the week](usage_shapes_by_weekday.png)
+
+### Trip duration by user type
+Looking at user type we observed a difference on the trip duration. While Customer present an average greater than Subscribers, they algo shows more variability on trip duration.
+![Trip duration by user type](trip_duration_by_user_type.png)
+
+### Difference between stations
+We compared the top 10 busiest stations and noticed they present very similar shapes during weekdays and weekends. The difference resides on little time shifts o residual bike trips on differente hours.
+![Bike usage by busiest stations](bike_usage_by_station.png)
+
+### User type distribution
+
+We tried to infer the user type distribution by bike usage and trip duration and we found that Subscribers are in majority than Customers. However, that difference is smaller in terms of trip duration.
+![User ditribution by bike usage](user_distribution_by_trip.png)
+
+## Key Insights for Presentation
+We will use the findings related to bike usage by day of the week and hours of the day, user type and different in duration to get a better understanding on the users and how that may help us to predict the behaviour of a station.
+
+You may find the full data exploration [here](exploration.ipynb).
